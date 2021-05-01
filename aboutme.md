@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre mim
-subtitle: Why you'd want to go on a date with me
+subtitle: Bacharel em Sistemas de Informação - Universidade Federal Fluminense - Aprendendo algo novo todos os dias!
 ---
 
 My name is Inigo Montoya. I have the following qualities:
