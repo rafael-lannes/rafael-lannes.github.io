@@ -16,8 +16,10 @@ author: Rafael Lannes
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+     - MakerSpace L3D UFF: "https://l3d.if.uff.br/"
+     - Jogo que eu fiz!: "https://rafaellannes.itch.io/"
+ #   - Beautiful Jekyll: "https://beautifuljekyll.com"
+ #   - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
 # --- Logo --- #
