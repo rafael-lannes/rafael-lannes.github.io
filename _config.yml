@@ -14,12 +14,12 @@ author: Rafael Lannes
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Sobre mim: "aboutme"
   Coisas que fiz!:
      - MakerSpace L3D UFF: "https://l3d.if.uff.br/"
      - Projetos Impressões 3D: "https://l3d.if.uff.br/?cat=4"
      - Jogo que eu fiz!: "https://rafaellannes.itch.io/"
      - Meu site de Reviews: "https://modostealth.wordpress.com/"
+  Sobre mim: "Blog"
   #   - Atividades Realizadas:
   Resume | CV: "https://drive.google.com/file/d/1bL85OJcGhh6h5MuCE_CuiKNpLNm92u00/view?usp=sharing"
  #   - Beautiful Jekyll: "https://beautifuljekyll.com"
