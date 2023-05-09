@@ -4,7 +4,7 @@ title: Rafael Lannes
 subtitle: Bacharel em Sistemas de Informação - Universidade Federal Fluminense - Aprendendo algo novo todos os dias!
 ---
 
-Meu nome é Rafael Lannes, sou formado em Sistemas de informação pela UFF - NIterói.
+Meu nome é Rafael Lannes, sou formado em Sistemas de informação pela UFF - Niterói.
 
 Sempre gostei de tecnologia, principalmente de computadores, e por este motivo optei pelo curso na área de computação. 
 Sou esforçado e procuro sempre dar o melhor de mim em tudo que faço. 
