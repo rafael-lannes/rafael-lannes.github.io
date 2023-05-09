@@ -15,8 +15,8 @@ Superar desafios através da tecnologia é muito gratificante e é por isso que 
 
 Linha do tempo resumida da minha carreira:
 
-2015: Comecei a estudar Sistemas de Informação na Universidade Federal Fluminense (UFF).
-2018: Iniciei meu estágio em Suporte Técnico e manutenção de computadores na Biblioteca da Física do Instituto de Física da UFF.
-2019: Comecei a trabalhar como Técnico de TI e Impressão 3D no projeto L3D UFF.
-2020: Me formei em Sistemas de Informação pela UFF e continuei trabalhando no laboratório L3D.
-2021: Iniciei minha carreira como Analista Júnior de Soluções Digitais na Enel.
+* 2015: Comecei a estudar Sistemas de Informação na Universidade Federal Fluminense (UFF).
+* 2018: Iniciei meu estágio em Suporte Técnico e manutenção de computadores na Biblioteca da Física do Instituto de Física da UFF.
+* 2019: Comecei a trabalhar como Técnico de TI e Impressão 3D no projeto L3D UFF.
+* 2020: Me formei em Sistemas de Informação pela UFF e continuei trabalhando no laboratório L3D.
+* 2021: Iniciei minha carreira como Analista Júnior de Soluções Digitais na Enel.
