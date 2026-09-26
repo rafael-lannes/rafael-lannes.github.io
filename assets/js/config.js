@@ -167,6 +167,16 @@ Busco construir soluções tecnológicas robustas, eficientes e de real impacto.
       githubUrl: "https://github.com/rafael-lannes/AudioJoiner"
     },
     {
+      title: "Bolso + Leve",
+      description: "O Bolso+Leve é um aplicativo nativo Android desenvolvido para o acompanhamento completo, moderno e reativo de tratamentos semanais de perda de peso (focado em análogos de GLP-1 como Mounjaro, Ozempic e Wegovy), combinando controle clínico, farmacológico e financeiro.",
+      image: "assets/images/projects/bolso-leve.jpg",
+      featured: false,
+      status: "desenvolvendo",
+      tags: ["Desenvolvendo", "Android Nativo", "GLP-1 Tracking", "Saúde & Finanças"],
+      demoUrl: "",
+      githubUrl: "https://github.com/rafael-lannes/Bolso-leve"
+    },
+    {
       title: "Protótipos & Jogos Digitais (Itch.io)",
       description: "Jogos e protótipos interativos desenvolvidos em Unity e C#, publicados de forma independente no Itch.io com foco em mecânicas responsivas e design de jogabilidade.",
       image: "assets/images/projects/cleber-vs-zombies.png",
