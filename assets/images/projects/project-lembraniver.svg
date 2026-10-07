@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="niverBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#311042" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="cakeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="giftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#niverBg)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="180" r="140" fill="#ec4899" opacity="0.15" filter="blur(30px)" />
+  <circle cx="340" cy="160" r="100" fill="#8b5cf6" opacity="0.12" filter="blur(25px)" />
+
+  <!-- Birthday Cake & Gift Illustration -->
+  <g transform="translate(400, 175)">
+    <!-- Calendar Card Base -->
+    <rect x="-110" y="-85" width="220" height="155" rx="16" fill="#1e293b" stroke="#ec4899" stroke-width="2.5" opacity="0.95" />
+    
+    <!-- Calendar Header -->
+    <path d="M-110 -69 Q-110 -85 -94 -85 L94 -85 Q110 -85 110 -69 L110 -45 L-110 -45 Z" fill="url(#cakeGrad)" />
+    <!-- Rings -->
+    <rect x="-65" y="-93" width="10" height="18" rx="5" fill="#f8fafc" />
+    <rect x="-10" y="-93" width="10" height="18" rx="5" fill="#f8fafc" />
+    <rect x="45" y="-93" width="10" height="18" rx="5" fill="#f8fafc" />
+
+    <!-- Cake Illustration -->
+    <g transform="translate(-25, 20)">
+      <!-- Plate -->
+      <ellipse cx="0" cy="30" rx="42" ry="6" fill="#475569" />
+      <!-- Bottom tier -->
+      <rect x="-32" y="5" width="64" height="22" rx="4" fill="#8b5cf6" />
+      <!-- Frosting drips -->
+      <path d="M-32 5 Q-24 14 -16 5 Q-8 14 0 5 Q8 14 16 5 Q24 14 32 5 L32 0 L-32 0 Z" fill="#ec4899" />
+      <!-- Top tier -->
+      <rect x="-22" y="-12" width="44" height="17" rx="3" fill="#ec4899" />
+      <path d="M-22 -12 Q-14 -4 -6 -12 Q2 -4 10 -12 Q18 -4 22 -12 L22 -16 L-22 -16 Z" fill="#f472b6" />
+      <!-- Candle -->
+      <rect x="-3" y="-28" width="6" height="12" rx="2" fill="#fbbf24" />
+      <!-- Flame -->
+      <path d="M0 -38 Q5 -33 0 -28 Q-5 -33 0 -38 Z" fill="#f59e0b" />
+      <circle cx="0" cy="-32" r="2.5" fill="#fef08a" />
+    </g>
+
+    <!-- Gift Box with Ribbon (Right side) -->
+    <g transform="translate(48, 18)">
+      <!-- Box -->
+      <rect x="-20" y="-5" width="40" height="32" rx="4" fill="url(#giftGrad)" />
+      <!-- Ribbon vertical -->
+      <rect x="-4" y="-5" width="8" height="32" fill="url(#goldGrad)" />
+      <!-- Ribbon horizontal -->
+      <rect x="-20" y="9" width="40" height="7" fill="url(#goldGrad)" />
+      <!-- Bow -->
+      <path d="M-8 -10 C-14 -16 -4 -16 -2 -8 C0 -16 10 -16 4 -10 Z" fill="url(#goldGrad)" />
+    </g>
+
+    <!-- Sparkles / Confetti -->
+    <circle cx="-80" cy="-20" r="3" fill="#fbbf24" />
+    <circle cx="-70" cy="35" r="2.5" fill="#38bdf8" />
+    <circle cx="85" cy="-25" r="3" fill="#ec4899" />
+    <circle cx="80" cy="40" r="2" fill="#a7f3d0" />
+    <path d="M -85,10 L -80,15 L -85,20 L -90,15 Z" fill="#f472b6" transform="scale(0.7)" />
+    <path d="M 110,-10 L 115,-5 L 110,0 L 105,-5 Z" fill="#fbbf24" transform="scale(0.7)" />
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="230" y="315" width="340" height="46" rx="23" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" />
+  <text x="400" y="344" fill="#f8fafc" font-family="'Manrope', 'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle" letter-spacing="1">LEMBRANIVER (DESENVOLVENDO)</text>
+</svg>

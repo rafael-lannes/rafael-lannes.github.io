@@ -56,6 +56,19 @@
   demo_url: ""
   github_url: "https://github.com/rafael-lannes/Bolso-leve"
 
+- title: "LembraNiver"
+  description: "O LembraNiver é um aplicativo moderno, completo e offline-first para você nunca mais esquecer de parabenizar quem ama, controlar ideias de presentes, evitar compras repetidas e celebrar datas comemorativas especiais."
+  image: "assets/images/projects/lembraniver.jpg"
+  featured: false
+  status: "desenvolvendo"
+  tags:
+    - "Desenvolvendo"
+    - "Mobile"
+    - "Offline-first"
+    - "Produtividade"
+  demo_url: ""
+  github_url: "https://github.com/rafael-lannes/LembraNiver"
+
 - title: "Protótipos & Jogos Digitais (Itch.io)"
   description: "Jogos e protótipos interativos desenvolvidos em Unity e C#, publicados de forma independente no Itch.io com foco em mecânicas responsivas e design de jogabilidade."
   image: "assets/images/projects/cleber-vs-zombies.png"
