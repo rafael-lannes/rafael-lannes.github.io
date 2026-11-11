@@ -21,7 +21,7 @@ const SITE_CONFIG = {
       text: "Explorando novas tecnologias e soluções"
     },
     
-    avatar: "assets/images/profile-pic.png",
+    avatar: "assets/images/profile-pic.jpg",
     
     bioShort: "Formado em Sistemas de Informação pela UFF com atuação corporativa em Soluções Digitais na Enel. Desenvolvimento de software, modelagem de dados/BI e prototipagem técnica.",
     
@@ -55,7 +55,7 @@ Busco construir soluções tecnológicas robustas, eficientes e de real impacto.
       description: "Conclusão do bacharelado em Sistemas de Informação pela UFF e publicação do Trabalho de Conclusão de Curso."
     },
     {
-      year: "2021 - Presente",
+      year: "2021 - 2026",
       title: "Analista de Soluções Digitais - Enel",
       description: "Atuação corporativa com análise, desenvolvimento e sustentação de soluções digitais e melhorias tecnológicas."
     },
