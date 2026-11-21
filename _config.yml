@@ -24,7 +24,7 @@ author:
   
   avatar: "assets/images/profile-pic.jpg"
   
-  bio_short: "Formado em Sistemas de Informação pela UFF com atuação corporativa em Soluções Digitais na Enel. Desenvolvimento de software, modelagem de dados/BI e prototipagem técnica."
+  bio_short: "Formado em Sistemas de Informação pela UFF, com sólido background em Soluções Digitais, desenvolvimento de software, BI/modelagem de dados e prototipagem técnica. Paralelamente, ofereço serviços especializados de manutenção, montagem e consultoria personalizada de computadores de alta performance para entusiastas de jogos e aplicações locais de IA."
   
   bio_full: >
     Sou formado em Sistemas de Informação pela Universidade Federal Fluminense (UFF - Niterói) e atuo como Analista de Soluções Digitais na Enel.
@@ -45,6 +45,8 @@ navigation:
     url: "#about"
   - title: "Portfolio"
     url: "#projects"
+  - title: "Monte seu PC"
+    url: "monte-seu-pc.html"
   - title: "Resume | CV"
     url: "https://docs.google.com/document/d/1FzDuEu7fBet1tpHOFAoU4kjU7POQWh7B/edit?usp=sharing&ouid=111306556304286270366&rtpof=true&sd=true"
     external: true

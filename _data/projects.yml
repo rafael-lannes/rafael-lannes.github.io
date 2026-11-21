@@ -2,6 +2,20 @@
 # PROJETOS (PORTFOLIO) - RAFAEL LANNES
 # ==============================================================================
 
+- title: "Montagem de PCs"
+  description: "Consultoria personalizada, escolha da configuração ideal para seu orçamento, montagem completa, cable management, ajustes de BIOS e testes de estabilidade para setups de alta performance."
+  image: "assets/images/projects/monte-seu-pc.jpg"
+  featured: false
+  tags:
+    - "Hardware"
+    - "Consultoria"
+    - "Custom PC"
+    - "Cable Management"
+    - "Gaming & IA"
+  demo_url: "monte-seu-pc.html"
+  demo_label: "Monte seu PC"
+  github_url: ""
+
 - title: "SteamER"
   description: "Aplicação web moderna, rápida e responsiva criada para facilitar a elaboração, formatação padronizada e publicação de análises (reviews) de jogos na Steam."
   image: "assets/images/projects/steamer.jpg"

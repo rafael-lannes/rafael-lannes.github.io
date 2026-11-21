@@ -23,7 +23,7 @@ const SITE_CONFIG = {
     
     avatar: "assets/images/profile-pic.jpg",
     
-    bioShort: "Formado em Sistemas de Informação pela UFF com atuação corporativa em Soluções Digitais na Enel. Desenvolvimento de software, modelagem de dados/BI e prototipagem técnica.",
+    bioShort: "Formado em Sistemas de Informação pela UFF, com sólido background em Soluções Digitais, desenvolvimento de software, BI/modelagem de dados e prototipagem técnica. Paralelamente, ofereço serviços especializados de manutenção, montagem e consultoria personalizada de computadores de alta performance para entusiastas de jogos e aplicações locais de IA.",
     
     bioFull: `Sou formado em Sistemas de Informação pela Universidade Federal Fluminense (UFF - Niterói) e atuo como Analista de Soluções Digitais na Enel.
 
@@ -78,6 +78,7 @@ Busco construir soluções tecnológicas robustas, eficientes e de real impacto.
     { title: "Início", url: "#hero" },
     { title: "Sobre & Carreira", url: "#about" },
     { title: "Portfolio", url: "#projects" },
+    { title: "Monte seu PC", url: "monte-seu-pc.html" },
     { title: "Resume | CV", url: "https://docs.google.com/document/d/1FzDuEu7fBet1tpHOFAoU4kjU7POQWh7B/edit?usp=sharing&ouid=111306556304286270366&rtpof=true&sd=true", external: true },
     { title: "Contato", url: "#contact" }
   ],
@@ -136,6 +137,16 @@ Busco construir soluções tecnológicas robustas, eficientes e de real impacto.
 
   // 6. Lista de Projetos (Portfolio)
   projects: [
+    {
+      title: "Montagem de PCs",
+      description: "Consultoria personalizada, escolha da configuração ideal para seu orçamento, montagem completa, cable management, ajustes de BIOS e testes de estabilidade para setups de alta performance.",
+      image: "assets/images/projects/monte-seu-pc.jpg",
+      featured: false,
+      tags: ["Hardware", "Consultoria", "Custom PC", "Cable Management", "Gaming & IA"],
+      demoUrl: "monte-seu-pc.html",
+      demoLabel: "Monte seu PC",
+      githubUrl: ""
+    },
     {
       title: "SteamER",
       description: "Aplicação web moderna, rápida e responsiva criada para facilitar a elaboração, formatação padronizada e publicação de análises (reviews) de jogos na Steam.",

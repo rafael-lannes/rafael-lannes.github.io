@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título e Metatags de SEO -->
+  <title>Monte seu PC — Consultoria e Montagem de PCs | Rafael Lannes</title>
+  <meta name="description" content="Consultoria e montagem personalizada de computadores, upgrades, testes de estabilidade e solução de problemas com Rafael Lannes.">
+  <meta name="author" content="Rafael Lannes">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Monte seu PC — Consultoria e Montagem de PCs | Rafael Lannes">
+  <meta property="og:description" content="Definição da configuração ideal, montagem completa, cable management e testes de estabilidade para seu computador.">
+  <meta property="og:image" content="assets/images/profile-pic.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/profile-pic.jpg">
+
+  <!-- Fontes: Manrope & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Anti-FOUC de Tema -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('theme');
+        var theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+
+<body class="site-body">
+  <a href="#main-content" class="skip-to-content">Pular para o conteúdo</a>
+
+  <!-- ========================================================================= -->
+  <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Voltar ao início">
+        <span class="logo-symbol">RL</span>
+        <span class="logo-text">Rafael Lannes</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-list" id="desktop-nav-list">
+          <li class="nav-item"><a href="index.html#hero" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">Sobre &amp; Carreira</a></li>
+          <li class="nav-item"><a href="index.html#projects" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="monte-seu-pc.html" class="nav-link active">Monte seu PC</a></li>
+          <li class="nav-item"><a href="https://docs.google.com/document/d/1FzDuEu7fBet1tpHOFAoU4kjU7POQWh7B/edit?usp=sharing&ouid=111306556304286270366&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="nav-link">Resume | CV <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do Header (Tema e Voltar) -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon theme-toggle-btn" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path><path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path><path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="index.html" class="btn btn-sm btn-outline-nav">
+          <span>&larr; Início</span>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-toggle-btn" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon menu-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+          <svg class="icon menu-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Drawer Mobile -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação mobile" hidden>
+      <div class="container mobile-nav-container">
+        <ul class="mobile-nav-list" id="mobile-nav-list">
+          <li class="mobile-nav-item"><a href="index.html#hero" class="mobile-nav-link">Início</a></li>
+          <li class="mobile-nav-item"><a href="index.html#about" class="mobile-nav-link">Sobre &amp; Carreira</a></li>
+          <li class="mobile-nav-item"><a href="index.html#projects" class="mobile-nav-link">Portfolio</a></li>
+          <li class="mobile-nav-item"><a href="monte-seu-pc.html" class="mobile-nav-link active">Monte seu PC</a></li>
+          <li class="mobile-nav-item"><a href="https://docs.google.com/document/d/1FzDuEu7fBet1tpHOFAoU4kjU7POQWh7B/edit?usp=sharing&ouid=111306556304286270366&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Resume | CV ↗</a></li>
+          <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- CONTEÚDO PRINCIPAL: MONTE SEU PC -->
+  <!-- ========================================================================= -->
+  <main id="main-content" class="page-detail">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Trilha de navegação">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        <span class="breadcrumb-current" aria-current="page">Monte seu PC</span>
+      </nav>
+
+      <!-- Apresentação Principal -->
+      <section class="pc-intro-card" aria-labelledby="pc-page-title">
+        <header class="pc-hero-header">
+          <div class="project-badge-row">
+            <span class="badge badge-accent">
+              <svg class="icon badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                <line x1="8" x2="16" y1="21" y2="21"></line>
+                <line x1="12" x2="12" y1="17" y2="21"></line>
+              </svg>
+              Hardware &amp; Custom Setup
+            </span>
+            <span class="badge badge-subtle">Consultoria Especializada</span>
+          </div>
+
+          <h1 class="project-detail-title" id="pc-page-title">Consultoria e Montagem de PCs</h1>
+        </header>
+
+        <p class="pc-intro-text">
+          Quer montar um computador sob medida ou fazer um upgrade sem dor de cabeça? Faço esse trabalho por hobby e paixão por hardware, cuidando de todo o processo com atenção aos detalhes:
+        </p>
+
+        <!-- Grade de Atividades e Diferenciais -->
+        <div class="pc-features-grid">
+          
+          <!-- Card 1: Proposta e Orçamento -->
+          <article class="pc-feature-card">
+            <div class="pc-feature-icon-wrapper" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                <path d="M9 14h6"></path>
+                <path d="M9 18h6"></path>
+                <path d="M9 10h1"></path>
+              </svg>
+            </div>
+            <h2 class="pc-feature-title">Proposta e Orçamento</h2>
+            <p class="pc-feature-desc">
+              Defino a configuração ideal para o seu uso e bolso, explicando cada peça escolhida para você comprar com segurança e sem desperdício.
+            </p>
+          </article>
+
+          <!-- Card 2: Montagem e Testes -->
+          <article class="pc-feature-card">
+            <div class="pc-feature-icon-wrapper" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                <path d="M15 2v2"></path>
+                <path d="M15 20v2"></path>
+                <path d="M2 15h2"></path>
+                <path d="M2 9h2"></path>
+                <path d="M20 15h2"></path>
+                <path d="M20 9h2"></path>
+                <path d="M9 2v2"></path>
+                <path d="M9 20v2"></path>
+              </svg>
+            </div>
+            <h2 class="pc-feature-title">Montagem e Testes</h2>
+            <p class="pc-feature-desc">
+              Realizo a montagem completa, organização de cabos (cable management), ajustes de BIOS e testes de temperatura e estabilidade.
+            </p>
+          </article>
+
+          <!-- Card 3: Acompanhamento -->
+          <article class="pc-feature-card">
+            <div class="pc-feature-icon-wrapper" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h2 class="pc-feature-title">Acompanhamento Transparente</h2>
+            <p class="pc-feature-desc">
+              Da escolha das peças até o PC pronto para ligar, você acompanha tudo de forma clara e sem enrolação.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Banner de Chamada para Vídeo e Contato -->
+        <div class="pc-cta-banner">
+          <div class="pc-cta-banner-icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.934a.5.5 0 0 0-.777-.416L16 11"></path>
+              <rect width="14" height="12" x="2" y="6" rx="2"></rect>
+            </svg>
+          </div>
+          <p class="pc-cta-text">
+            Quer tirar seu setup do papel? Entre em contato para conversarmos sobre o seu projeto. Podemos fazer uma chamada de vídeo para decidirmos as peças e combinar a montagem.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- 2. CARROSSEL DE FOTOS & PROJETOS REALIZADOS -->
+      <!-- ======================================================================= -->
+      <section class="carousel-section" aria-roledescription="carousel" aria-label="Galeria de Montagens e Manutenções de Hardware">
+        <div class="carousel-header">
+          <div class="carousel-title-group">
+            <span class="badge badge-accent">Galeria de Hardware</span>
+            <h2 class="carousel-title">Projetos &amp; Manutenções Recentes</h2>
+          </div>
+          <div class="carousel-nav-buttons">
+            <button type="button" class="carousel-arrow-btn" id="carousel-prev" data-direction="previous" aria-label="Imagem anterior" title="Imagem anterior">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="carousel-arrow-btn" id="carousel-next" data-direction="next" aria-label="Próxima imagem" title="Próxima imagem">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track" tabindex="0" role="group" aria-label="Slides com fotos das montagens">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 de 10" data-marker-name="Foto 1: PC Ryzen 5 Montado em out-2026">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/pc-ryzen5-out2026-1.jpg" alt="PC Ryzen 5 Montado em out-2026" class="slide-img" loading="eager" fetchpriority="high">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">01 / 10</span>
+                  <p class="slide-caption-text">PC Ryzen 5 Montado em out-2026</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 10" data-marker-name="Foto 2: PC Ryzen 5 Montado em out-2026">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/pc-ryzen5-out2026-2.jpg" alt="PC Ryzen 5 Montado em out-2026" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">02 / 10</span>
+                  <p class="slide-caption-text">PC Ryzen 5 Montado em out-2026</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 10" data-marker-name="Foto 3: Meu Setup Atual">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/meu-setup-atual.jpg" alt="Meu Setup Atual" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">03 / 10</span>
+                  <p class="slide-caption-text">Meu Setup Atual</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 de 10" data-marker-name="Foto 4: Manutenção de Steam Deck, troca de pasta térmica">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/steam-deck-pasta-termica.jpg" alt="Manutenção de Steam Deck , troca de pasta térmica" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">04 / 10</span>
+                  <p class="slide-caption-text">Manutenção de Steam Deck , troca de pasta térmica</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 de 10" data-marker-name="Foto 5: PC montado em julho-26">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/pc-julho26.jpg" alt="PC montado em julho-26" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">05 / 10</span>
+                  <p class="slide-caption-text">PC montado em julho-26</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 de 10" data-marker-name="Foto 6: PC montado 25">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/pc-montado-25.jpg" alt="PC montado 25" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">06 / 10</span>
+                  <p class="slide-caption-text">PC montado 25</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="7 de 10" data-marker-name="Foto 7: Troca de analógicos Steam Deck">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/steam-deck-analogicos-1.jpg" alt="Troca de analógicos Steam Deck" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">07 / 10</span>
+                  <p class="slide-caption-text">Troca de analógicos Steam Deck</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="8 de 10" data-marker-name="Foto 8: Troca de analógicos Steam Deck">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/steam-deck-analogicos-2.jpg" alt="Troca de analógicos Steam Deck" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">08 / 10</span>
+                  <p class="slide-caption-text">Troca de analógicos Steam Deck</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="9 de 10" data-marker-name="Foto 9: Troca de analógicos Steam Deck">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/steam-deck-analogicos-3.jpg" alt="Troca de analógicos Steam Deck" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">09 / 10</span>
+                  <p class="slide-caption-text">Troca de analógicos Steam Deck</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="10 de 10" data-marker-name="Foto 10: Troca de analógicos Steam Deck">
+              <div class="slide-media-wrap">
+                <img src="assets/images/hardware/steam-deck-analogicos-4.jpg" alt="Troca de analógicos Steam Deck" class="slide-img" loading="lazy">
+                <div class="slide-caption-bar">
+                  <span class="slide-badge">10 / 10</span>
+                  <p class="slide-caption-text">Troca de analógicos Steam Deck</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Anúncio acessível para leitores de tela -->
+        <p class="visually-hidden" id="carousel-status" role="status" aria-live="polite"></p>
+
+        <!-- Marcadores de navegação direta (Dots) -->
+        <nav class="carousel-markers" id="carousel-markers" aria-label="Navegar pelas fotos"></nav>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- 3. FORMULÁRIO DE CONTATO & ORÇAMENTO -->
+      <!-- ======================================================================= -->
+      <section class="pc-form-section" id="formulario-pc" aria-labelledby="form-heading">
+        <div class="pc-form-card">
+          
+          <header class="pc-form-header">
+            <h2 class="pc-form-title" id="form-heading">Solicite sua Consultoria ou Montagem</h2>
+            <p class="pc-form-subtitle">
+              Selecione o serviço desejado e nos dê os detalhes para prepararmos o melhor atendimento para você.
+            </p>
+          </header>
+
+          <!-- Formulário do Google Forms -->
+          <div class="google-form-container" id="google-form-wrapper">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc20YO86DebVW4pfMO-AYUTzy8qja8fjceaDkh1YRL89qB8QA/viewform?embedded=true" 
+                    width="100%" 
+                    height="1356" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    title="Formulário de Solicitação — Consultoria e Montagem de PCs"
+                    loading="lazy">Carregando…</iframe>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- RODAPÉ -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-social-links" aria-label="Redes sociais do rodapé">
+        <a href="https://linkedin.com/in/rafaellannes" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://github.com/rafael-lannes" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub" title="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        </a>
+        <a href="https://rafaellannes.itch.io/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Itch.io" title="Itch.io">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="3"></rect><line x1="6" y1="12" x2="10" y2="12"></line><line x1="8" y1="10" x2="8" y2="14"></line><circle cx="15" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="copyright-year">2026</span> Rafael Lannes. Todos os direitos reservados.
+        </p>
+        <p class="footer-credits">
+          Otimizado para o <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS & INTERATIVIDADE DA PÁGINA -->
+  <!-- ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Alternador de Tema Dark/Light
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+        });
+      }
+
+      // 2. Menu Mobile Drawer
+      const mobileToggleBtn = document.getElementById('mobile-menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      if (mobileToggleBtn && mobileNav) {
+        mobileToggleBtn.addEventListener('click', () => {
+          const isOpen = mobileToggleBtn.classList.toggle('is-active');
+          mobileToggleBtn.setAttribute('aria-expanded', isOpen);
+          if (isOpen) {
+            mobileNav.removeAttribute('hidden');
+          } else {
+            mobileNav.setAttribute('hidden', '');
+          }
+        });
+      }
+
+      // 3. Carrossel Acessível de Imagens
+      function initCarousel() {
+        const track = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const markersNav = document.getElementById('carousel-markers');
+        const statusElem = document.getElementById('carousel-status');
+        if (!track || !markersNav) return;
+
+        const slides = Array.from(track.querySelectorAll('.carousel-slide'));
+        const slideCount = slides.length;
+        if (slideCount === 0) return;
+
+        // Gera marcadores acessíveis com tamanho de toque adequado
+        markersNav.innerHTML = slides.map((slide, i) => `
+          <button type="button" 
+                  class="carousel-marker-dot" 
+                  data-index="${i}" 
+                  aria-label="${slide.getAttribute('data-marker-name') || `Ir para foto ${i + 1}`}"
+                  ${i === 0 ? 'aria-current="true"' : ''}>
+          </button>
+        `).join('');
+
+        const markerButtons = Array.from(markersNav.querySelectorAll('.carousel-marker-dot'));
+
+        function getSlideWidth() {
+          const firstSlide = slides[0];
+          const gap = parseFloat(getComputedStyle(track).gap) || 0;
+          return firstSlide.getBoundingClientRect().width + gap;
+        }
+
+        function getCurrentIndex() {
+          const slideWidth = getSlideWidth();
+          if (slideWidth <= 0) return 0;
+          return Math.round(track.scrollLeft / slideWidth);
+        }
+
+        function scrollToIndex(index, smooth = true) {
+          const safeIndex = (index + slideCount) % slideCount;
+          const slideWidth = getSlideWidth();
+          track.scrollTo({
+            left: safeIndex * slideWidth,
+            behavior: smooth ? 'smooth' : 'auto'
+          });
+          updateActiveMarker(safeIndex);
+        }
+
+        function updateActiveMarker(index) {
+          markerButtons.forEach((btn, i) => {
+            if (i === index) {
+              btn.setAttribute('aria-current', 'true');
+            } else {
+              btn.removeAttribute('aria-current');
+            }
+          });
+          const currentSlide = slides[index];
+          if (statusElem && currentSlide) {
+            const caption = currentSlide.querySelector('.slide-caption-text')?.textContent || '';
+            statusElem.textContent = `Foto ${index + 1} de ${slideCount}: ${caption}`;
+          }
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            const current = getCurrentIndex();
+            scrollToIndex(current - 1);
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            const current = getCurrentIndex();
+            scrollToIndex(current + 1);
+          });
+        }
+
+        markersNav.addEventListener('click', (e) => {
+          const btn = e.target.closest('.carousel-marker-dot');
+          if (!btn) return;
+          const idx = parseInt(btn.getAttribute('data-index'), 10);
+          if (!isNaN(idx)) scrollToIndex(idx);
+        });
+
+        // Atualização em tempo real do marcador conforme o usuário rola/arrasta (touch/trackpad)
+        let ticking = false;
+        track.addEventListener('scroll', () => {
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              const current = getCurrentIndex();
+              updateActiveMarker(current);
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }, { passive: true });
+
+        // Navegação por teclado quando o carrossel estiver focado
+        track.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const current = getCurrentIndex();
+            scrollToIndex(current - 1);
+          } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            const current = getCurrentIndex();
+            scrollToIndex(current + 1);
+          }
+        });
+      }
+
+      initCarousel();
+    });
+  </script>
+</body>
+</html>
