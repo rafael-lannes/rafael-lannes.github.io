@@ -25,7 +25,7 @@ const SITE_CONFIG = {
     
     bioShort: "Formado em Sistemas de Informação pela UFF, com sólido background em Soluções Digitais, desenvolvimento de software, BI/modelagem de dados e prototipagem técnica. Paralelamente, ofereço serviços especializados de manutenção, montagem e consultoria personalizada de computadores de alta performance para entusiastas de jogos e aplicações locais de IA.",
     
-    bioFull: `Sou formado em Sistemas de Informação pela Universidade Federal Fluminense (UFF - Niterói) e atuo como Analista de Soluções Digitais na Enel.
+    bioFull: `Sou formado em Sistemas de Informação pela Universidade Federal Fluminense (UFF - Niterói).
 
 Minha trajetória une desenvolvimento de software, engenharia de dados/BI e hardware. Possuo experiência no desenvolvimento de utilitários de alta performance em C# / .NET, automações com Python, dashboards em Power BI e prototipagem com manufatura aditiva (impressão 3D) no laboratório universitário L3D UFF.
 
